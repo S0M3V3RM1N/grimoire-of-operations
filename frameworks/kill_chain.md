@@ -63,6 +63,3 @@ Though more linear than frameworks like MITRE ATT&CK, the Kill Chain still serve
 
 *"Every chain has a weakest link. Make sure it’s the attacker’s, not yours."*
 
-Want to follow this with a diamond_model.md or pivot to a d3fend.md for blue team counter-frameworks?
-
-

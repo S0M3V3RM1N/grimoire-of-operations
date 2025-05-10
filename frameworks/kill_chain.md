@@ -49,4 +49,20 @@ Though more linear than frameworks like MITRE ATT&CK, the Kill Chain still serve
 
 - **Detection Coverage**: Helps structure alerting and detection logic by attack stage.
 - **Incident Review**: Useful for reconstructing timelines during investigations.
-- **Threat Modeling**:
+- **Threat Modeling**: Helps identify which parts of the chain your org is weak at.
+
+---
+
+## 🧠 Compare With
+
+- **MITRE ATT&CK**: More granular and behavior-focused; Kill Chain is strategic, ATT&CK is tactical.
+- **Diamond Model**: Focuses on relationships (adversary, infrastructure, victim, capability).
+- **D3FEND**: Blue-team mirror of ATT&CK with defensive techniques.
+
+---
+
+*"Every chain has a weakest link. Make sure it’s the attacker’s, not yours."*
+
+Want to follow this with a diamond_model.md or pivot to a d3fend.md for blue team counter-frameworks?
+
+

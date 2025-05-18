@@ -10,7 +10,7 @@ This playbook outlines the steps taken when a user account is suspected or confi
 
 Common triggers for this workflow:
 - User clicked a known phishing link
-- External alert (e.g., Google warning, sandbox result, Darktrace detection)
+- External alert 
 - Unexpected login location or device
 - Abnormal behavior observed by support or reported by user
 
@@ -20,10 +20,10 @@ Common triggers for this workflow:
 
 **If a compromise is suspected:**
 
-- [ ] Search for recent login activity in Google Admin under "Security > Login Log"
+- [ ] Search for recent login activity
 - [ ] Verify whether login occurred from unauthorized regions or devices
 - [ ] If suspicious, proceed with user lockout:
-  - Suspend the account in Admin Console
+  - Suspend the account
   - Revoke all active sessions
   - Remove app tokens (especially OAuth scopes)
 
@@ -59,11 +59,3 @@ Optional follow-up actions:
 - [ ] Evaluate if phishing training should be refreshed
 - [ ] Add new IOCs or behaviors to alerting platform (NDR/SIEM)
 - [ ] Adjust email or endpoint filtering if the attack vector was allowed through
-
----
-
-## Tools Used
-- Google Admin Console (User Activity, Security settings)
-- VirusTotal or sandbox for link/attachment verification
-- Darktrace Network Detection and Response
-- Internal communication tools for user engagement

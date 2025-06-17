@@ -9,7 +9,8 @@
 - **frameworks** - Cybersecurity frameworks, methodologies, and analysis models.
 - **incident response handbook** - A field guide for incident response and common standard operating procedures.
 - **research** - Notes, experiments, threat hunting, and investigations into cybersecurity topics
-- **foundations** - Core knowledge in networking, operating systems, security basics, and system operations. 
+- **foundations** - Core knowledge in networking, operating systems, security basics, and system operations.
+- **cheatsheets** - A collection of cheatsheets for reference when using common tools and systems.
 - **tools** - A collection of tools and scripts I've created and/or learned to use. 
 ## License 
 

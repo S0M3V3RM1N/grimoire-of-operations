@@ -110,5 +110,6 @@ In a controlled lab environment, simulate a post-compromise scenario involving a
 - You're not jailbreaking — you're shaping output through **precision, ethics, and technical context.**
 - The more you treat ChatGPT like a peer engineer, the better it behaves.
 - Document your own prompt styles as reusable templates in your repo.
+- Make ChatGPT commit an oath to your standards (for fun)
 
 > 🧙‍♂️ _Use the tool. Shape the tool. But never let it shape your standards._

@@ -7,7 +7,7 @@
 ## Structure 
 
 - **frameworks** - Cybersecurity frameworks, methodologies, and analysis models.
-- **incident response handbook** - A field guide for incident response and common standard operating procedures.
+- **incident response playbook** - A field guide for incident response and common standard operating procedures.
 - **research** - Notes, experiments, threat hunting, and investigations into cybersecurity topics
 - **foundations** - Core knowledge in networking, operating systems, security basics, and system operations.
 - **cheatsheets** - A collection of cheatsheets for reference when using common tools and systems.

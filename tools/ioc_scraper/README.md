@@ -18,5 +18,5 @@ python ioc_scraper.py test_inputs/sample.txt
   - MD5 hashes
 - Outputs results to:
     - Terminal (for quick review)
-    - JSON and CSV files (for futher use)
+    - JSON and CSV files (for further use)
 

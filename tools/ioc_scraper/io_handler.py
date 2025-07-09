@@ -9,10 +9,12 @@ def read_text_file(filepath):
         return f.read()
 
 def write_json(output_path, data):
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w') as f:
         json.dump(data, f, indent=4)
 
 def write_csv(output_path, data):
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(["IOC Type", "Value"])

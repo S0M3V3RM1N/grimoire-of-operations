@@ -3,7 +3,7 @@ import sys
 import pytest
 
 # Allow tests to import the tools package from repository root
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[3]))
 
 from tools.ioc_scraper.regex_patterns import extract_iocs
 

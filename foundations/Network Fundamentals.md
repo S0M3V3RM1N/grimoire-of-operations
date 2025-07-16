@@ -6,7 +6,7 @@ Networking is a beast. So is security. Both are deep, layered, and never finishe
 
 ---
 
-## 🧱 Core Concepts
+## Core Concepts
 
 ### IP Addresses
 Think of IPs like mailing addresses. Devices need them to send and receive data. There are two types:
@@ -120,7 +120,7 @@ Security Relevance:
 
 ---
 
-## 🧠 Final Note
+## Final Note
 
 This isn’t meant to be your final form — it’s meant to spark your curiosity. If you don’t know what something means, don’t skip it. **Chase it.** Write it down. Break it apart. That’s how you get dangerous.
 

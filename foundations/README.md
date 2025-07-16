@@ -1,4 +1,4 @@
-# 🧱 Foundations
+# Foundations
 
 The Foundations directory is where core knowledge is forged and refined. Here lies the base layer beneath every successful operation. This is where we document the fundamentals, not as a textbook, but as a tactical reference. The point isnt to memorize, it's to form a deep understanding and carve the pathway to building, breaking, and defending with intention.
 

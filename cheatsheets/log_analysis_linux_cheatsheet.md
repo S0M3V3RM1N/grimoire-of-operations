@@ -1,4 +1,4 @@
-## Log Analysis Cheatsheet
+## Log Analysis Linux Cheatsheet
 
 > **Purpose**: This cheatsheet offers a reference for analyzing system, application, and network logs during security investigations, audits, or general system administration. Use it to spot anomalies, detect suspicious activity, and reconstruct events.
 

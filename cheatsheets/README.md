@@ -10,15 +10,15 @@ This directory exists to support security professionals, hobbyists, and builders
 
 Cheatsheets here may include, but aren't limited to:
 
-- 🖥️ Operating System Commands  
-  - Linux, Windows, macOS, BSD
-- 🛠️ CLI Utilities  
-  - Bash, PowerShell, Zsh, coreutils, networking tools
-- 🔐 Cybersecurity Tools  
+- Operating System Commands  
+  - Linux, Windows, macOS
+- CLI Utilities  
+  - Bash, PowerShell, Zsh, networking tools
+- Cybersecurity Tools  
   - Nmap, Wireshark, Metasploit, Burp Suite, etc.
-- 🔍 Recon, Analysis, and Monitoring  
+- Recon, Analysis, and Monitoring  
   - OSINT tools, log analysis, packet capture
-- 🧰 Scripting & Automation  
+- Scripting & Automation  
   - Python, shell scripting, automation frameworks
 
 ---

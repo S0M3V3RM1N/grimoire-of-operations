@@ -113,7 +113,7 @@ Access via: [https://www.nist.gov/cyberframework](https://www.nist.gov/cyberfram
 
 ## 7. Reference Materials
 
-* [NIST CSF 2.0 Reference Tool](https://csf.tools)
+* [NIST CSF 2.0 PDF](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf)
 * [SP 800-53 Rev. 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final)
 * [IR 8286 Series (ERM Integration)](https://csrc.nist.gov/publications/series/nistir/8286)
 * [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)

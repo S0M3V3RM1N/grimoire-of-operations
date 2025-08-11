@@ -2,6 +2,8 @@
 
 *A living record of tactics, frameworks, and research across the disciplines of cybersecurity.*
 
+The point of this repo is to serve as a point of reference for aspiring analysts or those already operating in the field. It is ever expanding as I personally dive deeper into the world of cybersecurity and blue team operations. If you need a quick reference or looking to break into the field of cybersecurity (specifically blue team oriented roles) then this repo can help.
+
 ---
 
 ## Structure 

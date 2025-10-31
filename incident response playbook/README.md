@@ -1,34 +1,41 @@
-# 🛡️ Incident Response Handbook
+# Incident Response Handbook
 
-This is my personal incident response playbook, built from direct, hands-on experience in a hybrid networking and security role within an educational environment. The goal is to provide practical, repeatable procedures for common security incidents, and to document my growth as I deepen my skills in blue team operations.
+This directory contains a growing collection of practical playbooks and references for incident detection, triage, and remediation. Each file reflects real-world experience gained through network and security operations in an educational enterprise environment.
 
 ## Purpose
 
-This repository serves to:
-- Document real-world response processes I’ve used or developed.
-- Provide structure for continued learning in incident detection, triage, and remediation.
-- Offer transparency into how I approach security as an evolving practitioner.
+* Establish structured and repeatable processes for responding to common security incidents.
+* Provide a personal reference for blue team workflows, log analysis, and operational improvement.
+* Serve as a living record of lessons learned, tools explored, and methods refined over time.
 
-## Scope
+## Current Playbooks
 
-Currently includes response procedures for:
-- **Phishing Emails** – Triage, investigation, and user remediation in a Google Workspace environment.
-- **Account Compromise** – Detecting and responding to suspected credential theft.
-- **Vulnerability Triage** – Prioritizing remediation based on third-party scan data.
-- **Initial Access Detection** – (WIP) Monitoring and anomaly detection practices using NDR and log data.
-- **Tools Used** – Summaries and notes on utility usage.
-- **Templates** – Communication samples and log documentation formats.
+| Playbook                                     | Description                                                                                                                    |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **incident_response.md**                     | General overview of incident response stages: Preparation, Detection, Containment, Eradication, Recovery, and Lessons Learned. |
+| **phishing_response.md**                     | Procedures for triaging phishing emails, verifying indicators, remediating accounts, and notifying users.                      |
+| **log_correlation_baseline.md**              | Steps to establish baseline network activity and reduce noise in monitoring environments.                                      |
+| **credential_compromise.md** *(planned)*     | Response guide for suspected account takeovers or credential exposure.                                                         |
+| **malware_infection.md** *(planned)*         | Triage and containment workflow for malware or ransomware detections.                                                          |
+| **google_workspace_incident.md** *(planned)* | Response framework for investigating incidents within Google Workspace logs and services.                                      |
 
-## Approach
+## Methodology
 
-I believe in continuous improvement and self-education. This repo reflects that philosophy — learning by doing, documenting what works, and refining process over time. It's meant to grow as my access to new tools and responsibilities expands.
+The approach emphasizes clarity and adaptability:
 
-## 🔄 Work in Progress
+* Document actions taken during real incidents.
+* Translate lessons learned into procedural playbooks.
+* Continuously refine based on tooling changes, visibility improvements, and threat landscape shifts.
 
-As I explore deeper topics like SIEM correlation, firewall log analysis, and scripting for automation, more content will be added.
+## Future Expansion
+
+Upcoming playbooks will focus on:
+
+* Endpoint Detection and Response (EDR) alert triage.
+* Firewall log analysis and tuning.
+* Threat hunting methodologies.
+* Automation workflows for IOC correlation and alert enrichment.
 
 ## Disclaimer
 
-These documents are based on personal experience and should be adapted for your own environment. They are not official guidance or policy, and should be reviewed before production use.
-
----
+These materials are for educational and operational reference only. They reflect personal experience and research, not formal organizational policy. Adapt procedures and technical steps according to your environment’s requirements and compliance standards.

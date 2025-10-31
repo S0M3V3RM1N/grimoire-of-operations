@@ -10,31 +10,31 @@ This directory contains a growing collection of practical playbooks and referenc
 
 ## Current Playbooks
 
-| Playbook                                     | Description                                                                                                                    |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **incident_response.md**                     | General overview of incident response stages: Preparation, Detection, Containment, Eradication, Recovery, and Lessons Learned. |
-| **phishing_response.md**                     | Procedures for triaging phishing emails, verifying indicators, remediating accounts, and notifying users.                      |
-| **log_correlation_baseline.md**              | Steps to establish baseline network activity and reduce noise in monitoring environments.                                      |
-| **credential_compromise.md** *(planned)*     | Response guide for suspected account takeovers or credential exposure.                                                         |
-| **malware_infection.md** *(planned)*         | Triage and containment workflow for malware or ransomware detections.                                                          |
-| **google_workspace_incident.md** *(planned)* | Response framework for investigating incidents within Google Workspace logs and services.                                      |
+| File                         | Description                                                                                                                                  |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **incident_response.md**     | A general overview of the full incident response lifecycle: preparation, detection, containment, eradication, recovery, and lessons learned. |
+| **phishing_response.md**     | Step-by-step guide for identifying, investigating, and remediating phishing emails and compromised accounts.                                 |
+| **account_compromise.md**    | Playbook for investigating and responding to suspected credential theft or unauthorized account activity.                                    |
+| **establishing_baseline.md** | Framework for defining normal network and user behavior to improve detection accuracy and reduce false positives.                            |
+| **triage_tips.md**           | Quick reference for effective triage — verifying alerts, weighing logs, documenting findings, and prioritizing next actions.                 |
+| **incident_log_template.md** | A consistent markdown template for documenting incidents, investigation steps, and resolution outcomes.                                      |
 
 ## Methodology
 
 The approach emphasizes clarity and adaptability:
 
 * Document actions taken during real incidents.
-* Translate lessons learned into procedural playbooks.
-* Continuously refine based on tooling changes, visibility improvements, and threat landscape shifts.
+* Translate lessons learned into structured, reusable playbooks.
+* Continuously refine based on tooling changes, visibility improvements, and evolving threats.
 
 ## Future Expansion
 
 Upcoming playbooks will focus on:
 
-* Endpoint Detection and Response (EDR) alert triage.
-* Firewall log analysis and tuning.
-* Threat hunting methodologies.
-* Automation workflows for IOC correlation and alert enrichment.
+* EDR alert triage and host isolation.
+* Firewall event correlation and rule verification.
+* Threat hunting methodologies using baselines and IOC data.
+* Automation workflows for alert enrichment and reporting.
 
 ## Disclaimer
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This playbook provides a structured approach to establishing and maintaining a baseline of normal network and system activity. A clear baseline enables effective anomaly detection, reduces alert fatigue, and supports threat hunting by distinguishing expected behavior from suspicious deviations.
+This document provides a structured approach to establishing and maintaining a baseline of normal network and system activity. A clear baseline enables effective anomaly detection, reduces alert fatigue, and supports threat hunting by distinguishing expected behavior from suspicious deviations.
 
 ## Objectives
 

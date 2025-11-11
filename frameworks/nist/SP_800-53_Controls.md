@@ -13,7 +13,7 @@ It is widely considered a blueprint for building, implementing, and auditing sec
 
 ---
 
-## 📚 Structure of the Controls Catalog
+## Structure of the Controls Catalog
 
 SP 800-53 is broken into **20 control families**. Each family focuses on a critical domain of security and privacy. Here are a few examples:
 
@@ -34,7 +34,7 @@ Each control typically includes:
 
 ---
 
-## 🔄 Baseline Implementation Tiers
+## Baseline Implementation Tiers
 
 Controls are applied based on impact level:
 
@@ -46,7 +46,7 @@ Organizations select baseline controls and then tailor them to their environment
 
 ---
 
-## 🧰 Use Cases for Blue Teamers
+## Use Cases for Blue Teamers
 
 * **Hardening checklists**: Use SP 800-53 controls to build secure baselines for systems and applications
 * **Gap analysis**: Evaluate current security posture against control expectations
@@ -55,7 +55,7 @@ Organizations select baseline controls and then tailor them to their environment
 
 ---
 
-## 🔗 Related Files and Future Work
+## Related Files and Future Work
 
 * `sp_800-53_control_families.md` – Detailed walkthrough of each control family
 * `nist_baseline_tiers.md` – Breakdown of Low/Moderate/High baselines

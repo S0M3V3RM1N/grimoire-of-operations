@@ -2,7 +2,7 @@
 
 A living record of tactics, frameworks, and research across the disciplines of cybersecurity.
 
-This repository serves as both a personal knowledge base and a development ground for tools, playbooks, and written references built through hands-on experience. I encourage others on their path of learning to use this repo as a source for quick knowledge checks and review. Additionally, if you're dropped into the deep end of security w/ your role and need a guiding hand, I hope that this repo serves you in your pursuit of strengthening your organization security posture while enabling you to feel more confident in yourself.
+This repository serves as both a personal knowledge base and a development ground for tools, playbooks, and written references built through hands-on experience. I encourage others on their path of learning to use this repo as a source for quick knowledge checks and review. Additionally, if you're dropped into the deep end of security w/ your role and need a guiding hand, I hope that this repo serves you in your pursuit of strengthening your organization's security posture while enabling you to feel more confident in yourself.
 
 ---
 

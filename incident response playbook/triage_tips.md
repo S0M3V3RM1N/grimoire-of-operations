@@ -1,16 +1,16 @@
-# 🛡️ Triage Tips & Tricks — A Blue Team Primer
+# Triage Tips & Tricks — A Blue Team Primer
 
-This markdown serves as a quick-reference guide for incident responders, with a focus on fast, effective triage using open source tools. These are practical field notes — not theory, not vendor fluff.
+This markdown serves as a quick-reference guide for incident responders; with a focus on fast & effective triage using open source tools. These are practical field notes.
 
 ---
 
-## 🧭 Guiding Principles
+## Guiding Principles
 
 - **Stay Calm, Move Deliberately:** Panic wastes time and leads to sloppy triage.
-- **Corroborate Evidence:** Logs lie. Correlate across multiple sources before drawing conclusions.
+- **Corroborate Evidence:** Logs can be noisy. Correlate across multiple sources before drawing conclusions.
 - **Document Everything:** If it’s not written down, it didn’t happen.
 - **Contain First, Understand Later:** Scope expands fast. Halt the bleeding before investigating the wound.
-- **Don’t Assume Competence (or Malice):** Misconfigurations can look like compromises.
+- **Don’t Assume Competence (or Malice):** Misconfigurations can look like compromises. A poweruser isn't always an inside threat. 
 
 ---
 
@@ -30,7 +30,7 @@ This markdown serves as a quick-reference guide for incident responders, with a 
 
 ---
 
-## 📓 Triage Flow
+## Triage Flow
 
 ### 1. **Initial Detection**
 - Log alert, email report, user ticket, or anomaly triggers attention.
@@ -44,7 +44,7 @@ This markdown serves as a quick-reference guide for incident responders, with a 
   - User behavior
   - Known IOCs
 
-> 🔍 _Tip:_ Sometimes, the EDR will trigger but the email gateway won't. Or vice versa. Trust neither alone.
+> _Tip:_ Sometimes, the EDR will trigger but the email gateway won't. Or vice versa. Trust neither alone.
 
 ### 3. **Scope It**
 - Who else? What else? Lateral movement?
@@ -66,7 +66,7 @@ This markdown serves as a quick-reference guide for incident responders, with a 
 
 ---
 
-## 🗂️ Evidence Weighing
+## Evidence Weighing
 
 - **Logs ≠ Truth.** Always ask: _Could this be spoofed?_ _Could this be a false positive?_
 - **Email Headers:** Use multiple tools (Google Admin console, VirusTotal, header analyzers)
@@ -75,7 +75,7 @@ This markdown serves as a quick-reference guide for incident responders, with a 
 
 ---
 
-## 🧠 Analyst Intuition (Honed Over Time)
+## Analyst Intuition (Honed Over Time)
 
 - Suspicious ≠ Malicious
 - The weirdest alerts are often user error
@@ -84,14 +84,14 @@ This markdown serves as a quick-reference guide for incident responders, with a 
 
 ---
 
-## 🔚 End of Triage Checklist
+## End of Triage Checklist
 
-- ✅ Host isolated (if needed)
-- ✅ Credentials reset (if needed)
-- ✅ Evidence saved (logs, PCAPs, screenshots)
-- ✅ Incident report started or ticket updated
-- ✅ Escalated or closed based on findings
+- [x] Host isolated (if needed)
+- [x] Credentials reset (if needed)
+- [x] Evidence saved (logs, PCAPs, screenshots)
+- [x] Incident report started or ticket updated
+- [x] Escalated or closed based on findings
 
 ---
 
-> 📌 _"Triage is where intuition meets data. Log it all. Trust, but verify."_
+> _"Triage is where intuition meets data. Log it all. Trust, but verify."_

@@ -1,41 +1,69 @@
-# MITRE ATT&CK Framework
+# MITRE ATT&CK Framework Overview
 
-The MITRE ATT&CK® Framework is a living matrix of known adversary behavior — not based on theory, but on real-world attacks. It doesn't care how advanced your firewall is or what brand name is on your EDR. ATT&CK tells you **how** attackers operate, step by step, from initial access to data exfiltration.
+The **MITRE ATT&CK® Framework** is a continuously updated knowledge base of real-world adversary behaviors. It focuses not on theoretical models or specific technologies, but on how attackers actually operate from **initial access** to **data exfiltration**.
 
-Where traditional models focus on the tools, ATT&CK emphasizes **tactics** (the "why") and **techniques** (the "how"). It’s not just about stopping malware — it’s about understanding the behavior behind it.
-
-## Why It Matters
-
-- It gives defenders a shared language to describe attacks.
-- It maps red team activity to known threat behaviors.
-- It fuels detection engineering, threat hunting, and incident response.
-- It shifts focus from IOCs to TTPs — the behavior patterns that persist beyond tooling.
-
-## Core Concepts
-
-- **Tactics:** The goals of an attacker during an operation (e.g., Persistence, Defense Evasion).
-- **Techniques:** The methods used to achieve those goals (e.g., Registry Run Keys, Obfuscated Files).
-- **Sub-techniques:** More granular variations of a technique.
-- **Procedures:** Specific real-world examples, often linked to threat actor groups.
-
-## What This File Is
-
-This markdown is a high-level primer — a launching point into ATT&CK. It’s not exhaustive, and it’s not formal. This is for operators, defenders, and learners who want to orient themselves before diving deeper.
-
-Additional pages will expand on:
-
-- `tactics.md` – A walkthrough of each tactic with examples.
-- `techniques/` – Individual files breaking down specific techniques.
-- `use-cases.md` – How we’ve applied ATT&CK in the real world.
-- `mappings/` – How alerts, logs, and tools map to ATT&CK.
-
-## External Resources
-
-- [MITRE ATT&CK Site](https://attack.mitre.org/)
-- [ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/)
-- [Red Canary ATT&CK Reports](https://redcanary.com/threat-detection-report/)
-- [MITRE ATT&CK GitHub](https://github.com/mitre-attack/attack)
+ATT&CK shifts cybersecurity from reactive defense to behavioral understanding. It provides a common language and structured way to analyze and defend against adversaries. The MITRE ATT&CK website is a critical part in understanding the tactics and techniques used in the wild. Additionally, APT tracking is another part of the website that can be used for threat intelligence/research. Tactics and techniques are mapped to the APT groups showcasing what a group is/was actively using in their attacks. 
 
 ---
 
-*“You don’t stop a threat by reacting to the payload. You stop it by recognizing the pattern.”*
+## Why It Matters
+
+* Establishes a **shared taxonomy** for describing attacks across teams and organizations.
+* Maps **red team and threat actor behavior** to known adversary techniques.
+* Drives **detection engineering**, **threat hunting**, and **incident response** strategies.
+* Focuses defenders on **tactics, techniques, and procedures (TTPs)** — persistent behavioral patterns that remain even as tooling changes.
+
+---
+
+## Core Concepts
+
+| Concept            | Description                                                                           | Example                              |
+| ------------------ | ------------------------------------------------------------------------------------- | ------------------------------------ |
+| **Tactics**        | The *objectives* of the attacker — the “why.”                                         | Persistence, Defense Evasion         |
+| **Techniques**     | The *methods* used to achieve those objectives — the “how.”                           | Registry Run Keys, Obfuscated Files  |
+| **Sub-Techniques** | More detailed, specific implementations of a technique.                               | `T1059.001` – PowerShell             |
+| **Procedures**     | Real-world examples of techniques in use, often attributed to specific threat actors. | APT29 using credential dumping tools |
+
+---
+
+## Framework Structure
+
+The ATT&CK Matrix organizes adversary behavior into stages reflecting the progression of an attack. Each column represents a **tactic**, and each cell a **technique**.
+
+* **Enterprise ATT&CK** – For Windows, macOS, Linux, and cloud environments.
+* **Mobile ATT&CK** – Covers Android and iOS ecosystems.
+* **ICS ATT&CK** – For industrial control systems and OT environments.
+
+Each domain is continuously updated based on community input and public threat intelligence.
+
+---
+
+## Application in Blue Team Operations
+
+* **Detection Engineering:** Develop analytic rules mapped to ATT&CK techniques.
+* **Threat Hunting:** Identify gaps and unusual patterns in telemetry aligned to ATT&CK TTPs.
+* **Incident Response:** Classify activity according to ATT&CK mappings to understand adversary goals and progression.
+* **Purple Teaming:** Coordinate red and blue team exercises using ATT&CK as a shared model.
+* **Reporting and Metrics:** Measure defensive coverage by mapping detections and incidents to ATT&CK techniques.
+
+---
+
+## What This File Is
+
+This markdown serves as a **high-level primer** on ATT&CK — designed for operators, defenders, and learners looking to ground themselves before exploring detailed implementations.
+
+Additional documentation within this repository expands on specific areas(future creation planned):
+
+* `tactics.md` – Walkthrough of each tactic with context and examples.
+* `techniques/` – Individual markdowns breaking down key techniques.
+* `use-cases.md` – Practical applications of ATT&CK in investigations and exercises.
+* `mappings/` – Crosswalks between internal telemetry and ATT&CK coverage.
+
+---
+
+## External Resources
+
+* [MITRE ATT&CK Website](https://attack.mitre.org/)
+* [ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/)
+* [MITRE ATT&CK GitHub Repository](https://github.com/mitre-attack/attack-navigator)
+* [Red Canary ATT&CK Reports](https://redcanary.com/threat-detection-report/)

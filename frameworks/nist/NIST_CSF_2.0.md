@@ -1,125 +1,104 @@
-# NIST Cybersecurity Framework (CSF) 2.0 - Operational Guide
+# NIST CSF 2.0: Blue Team Quick Reference & Operations Guide
 
-This guide summarizes the structure and utility of the NIST CSF 2.0 and is intended for use in your Grimoire of Operations. The content is designed to assist with practical implementation and communication of cybersecurity risk management strategies.
-
----
-
-## 1. Framework Structure
-
-### Core Components
-
-* **Functions (6 total)**
-
-  * **GOVERN**: Define, oversee, and integrate risk management strategy and expectations.
-  * **IDENTIFY**: Understand assets, risks, and organizational context.
-  * **PROTECT**: Implement safeguards to mitigate risk.
-  * **DETECT**: Identify cybersecurity incidents.
-  * **RESPOND**: React to incidents with mitigation and communication.
-  * **RECOVER**: Restore capabilities and operations post-incident.
-
-* **Categories & Subcategories**
-
-  * Nested under each Function.
-  * Represent outcomes, not actions.
-  * Technology- and sector-neutral.
+> This guide helps cybersecurity defenders rapidly apply NIST Cybersecurity Framework v2.0 to daily blue team operations. It distills CSF functions into actionable activities and checklists for monitoring, incident response, and risk management.
 
 ---
 
-## 2. Organizational Profiles
+## 1. NIST CSF Core Functions for Blue Teams
 
-### Purpose
-
-Profiles represent an organization’s:
-
-* **Current state** of cybersecurity ("Current Profile")
-* **Desired state** or risk tolerance ("Target Profile")
-
-### Use Cases
-
-* Tailor security goals
-* Communicate cybersecurity posture
-* Prioritize remediation
-
-### Profile Creation Process
-
-1. **Scope the Profile**: Define what segment of the organization it covers.
-2. **Gather Input**: Pull from policies, BIAs, existing controls.
-3. **Document Outcomes**: Align to CSF Core.
-4. **Gap Analysis**: Compare Current vs Target.
-5. **Implement Plan**: Address deficiencies, track progress.
-
-Community Profiles (sector or threat-based baselines) can inform Targets.
+| Function    | Blue Team Actions                                                                    |
+|-------------|--------------------------------------------------------------------------------------|
+| GOVERN      | Set policies, align with CISO, update risk strategies, document priorities.          |
+| IDENTIFY    | Asset inventory, vulnerability management, threat intel, risk assessment.            |
+| PROTECT     | Harden systems, patch management, access controls, awareness training.               |
+| DETECT      | Monitor (SIEM), analyze alerts, hunt threats, maintain detection coverage.           |
+| RESPOND     | Triage incidents, contain threats, communicate with stakeholders, use IR playbook.   |
+| RECOVER     | Restore systems, validate integrity, conduct lessons learned, update documentation.  |
 
 ---
 
-## 3. CSF Tiers
+## 2. Rapid Profile Creation — Defender’s Workflow
 
-### Description
+- **1. Define Scope:** Pick network zones, business units, or asset types.
+- **2. Assess State:** Use existing controls and logs to measure current posture (Current Profile).
+- **3. Set Targets:** Prioritize based on risk (Target Profile)—focus on highest-impact gaps first.
+- **4. Gap Analysis:** Use SIEM/EDR reports to identify and record gaps.
+- **5. Remediate & Track:** Assign tasks, monitor progress; update profile as gaps close.
 
-Tiers reflect the maturity of cybersecurity governance and risk management practices.
-
-| Tier             | Governance                                  | Risk Management                            |
-| ---------------- | ------------------------------------------- | ------------------------------------------ |
-| 1. Partial       | Ad hoc, limited awareness                   | Irregular, isolated practices              |
-| 2. Risk Informed | Some consistency, loosely linked to mission | Basic awareness, informal sharing          |
-| 3. Repeatable    | Formal policy, consistent practices         | Regular updates, integrated communications |
-| 4. Adaptive      | Fully integrated with ERM, data-driven      | Predictive, real-time awareness            |
-
-Use Tiers to contextualize risk posture across Profiles.
+*Tip: Use prebuilt blue team templates for faster onboarding (see [Community Profiles](https://www.nist.gov/cyberframework)).*
 
 ---
 
-## 4. Supplemental Online Resources
+## 3. CSF Tiers — Operationalizing Maturity
 
-* **Informative References**: Mappings to other frameworks (e.g., SP 800-53).
-* **Implementation Examples**: Suggested action steps ("develop", "monitor", etc.).
-* **Quick Start Guides (QSGs)**: Practical entry points tailored to sectors or roles.
-* **Community Profiles & Templates**: Predefined baselines and formats.
+| Tier       | Blue Team Indicators                                    |
+|------------|--------------------------------------------------------|
+| Partial    | Ad hoc logs, no playbooks, reactive only               |
+| Informed   | Basic monitoring, some IR drills, coverage mapped      |
+| Repeatable | Formal procedures, weekly reviews, integrated defense  |
+| Adaptive   | Automated response, threat hunting, dashboarding       |
 
-Access via: [https://www.nist.gov/cyberframework](https://www.nist.gov/cyberframework)
-
----
-
-## 5. Integrating CSF with Risk Programs
-
-### Risk Communication
-
-* Shared vocabulary between executives, managers, and practitioners.
-* Organizational Profiles support strategic, tactical, and operational alignment.
-
-### Enterprise Risk Management (ERM) Integration
-
-* CSF enables translation of cyber risks to business language.
-* Supported by IR 8286 series and SP 800-221.
-
-### Risk Types Covered
-
-* **Cybersecurity risk management** (SP 800-37, 800-30, 800-53)
-* **Privacy risk** (NIST Privacy Framework, PRAM)
-* **Supply chain risk** (SP 800-161r1)
-* **AI and emerging tech risk** (NIST AI RMF)
+*Choose Tier goals for blue team maturity planning; escalate as skills/tools enable!*
 
 ---
 
-## 6. Application Tips
+## 4. Defense Task Quicklists (Example per Function)
 
-* Customize Profile scope to avoid overgeneralization.
-* Profiles aren't audits; they describe *what*, not *how*.
-* Use CSF alongside existing tools (SIEM, IR playbooks, etc.).
-* Iterate periodically—it's a cycle, not a checklist.
-* Link outcomes to specific controls (via Informative References).
+### IDENTIFY
+- Asset & vuln scan (weekly)
+- Risk register update (monthly)
+- Threat landscape review (ongoing)
+
+### PROTECT
+- Patch critical systems (weekly)
+- Test incident-prevention controls (monthly)
+- Enforce MFA & access policies
+
+### DETECT
+- SIEM alert review (daily)
+- Anomaly monitoring (real-time)
+- Threat hunting (scheduled/adhoc)
+
+### RESPOND
+- IR playbook drill (quarterly)
+- Incident triage (as-needed)
+- Stakeholder comms (during active events)
+
+### RECOVER
+- Validate full service restoration
+- Conduct root cause analysis
+- Update procedures/playbooks post-incident
 
 ---
 
-## 7. Reference Materials
+## 5. Integration Points for Blue Team Operations
 
-* [NIST CSF 2.0 PDF](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf)
-* [SP 800-53 Rev. 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final)
-* [IR 8286 Series (ERM Integration)](https://csrc.nist.gov/publications/series/nistir/8286)
-* [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+- **SIEM/SOAR:** Used for DETECT & RESPOND; tie alerts to CSF categories.
+- **Vulnerability Management:** Use for IDENTIFY & PROTECT.
+- **IR Playbooks & Tabletop Exercises:** RESPOND & RECOVER.
+- **Reporting Dashboards:** GOVERN (for management visibility).
+- **Reference Materials:** Tie blue team actions to [SP 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final), [IR 8286](https://csrc.nist.gov/publications/series/nistir/8286), [NIST CSF Portal](https://www.nist.gov/cyberframework).
 
 ---
 
-**Note:** This document serves as a field-ready overview of the CSF 2.0 for cybersecurity practitioners, with emphasis on adaptability, modularity, and continuous improvement.
+## 6. Daily, Weekly, Incident-Based Blue Team Operations
 
-For deeper customization or implementation examples, refer to the official NIST CSF 2.0 web portal.
+- **Daily:** SIEM alert triage, monitor health/detection coverage, new threat review.
+- **Weekly:** Vulnerability scans, patch checks, asset inventory.
+- **Monthly:** Policy update reviews, risk assessment, profile adjustment.
+- **Incident:** Activate IR plan, document actions, perform containment/eradication, recover and update procedures.
+
+---
+
+## 7. Fast Reference Links
+
+- [NIST CSF 2.0 Full PDF](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf)
+- [NIST Cyber Framework Portal](https://www.nist.gov/cyberframework)
+- [SP 800-53 Controls](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final)
+- [IR 8286 ERM Integration](https://csrc.nist.gov/publications/series/nistir/8286)
+- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+
+---
+
+**Note:** Iterate profiles, controls, and operations frequently—use CSF as a living reference for defensive action. Adapt tools and checklists to your team’s needs.
+
